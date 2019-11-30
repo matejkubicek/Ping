@@ -25,6 +25,7 @@
     "autoprefixer": "^9.7.2",
     "browser-sync": "^2.26.7",
     "eslint": "^6.7.1",
+    "eslint-config-jquery": "^2.0.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^10.0.0",
