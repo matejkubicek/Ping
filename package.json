@@ -1,0 +1,40 @@
+{
+  "name": "ping",
+  "version": "1.0.0",
+  "description": "------",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o css scss",
+    "autoprefixer": "postcss -u autoprefixer -r css/*",
+    "serve": "browser-sync start --server --files 'css/*.css, js/*.js'",
+    "build:css": "npm run scss && npm run autoprefixer",
+    "watch:css": "onchange 'scss/*.scss' 'scss/*/*.scss' -- npm run build:css",
+    "run": "npm-run-parallel watch:css serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matejkubicek/Ping.git"
+  },
+  "author": "MK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matejkubicek/Ping/issues"
+  },
+  "homepage": "https://github.com/matejkubicek/Ping#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.2",
+    "browser-sync": "^2.26.7",
+    "eslint": "^6.7.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "node-sass": "^4.13.0",
+    "npm-run-parallel": "^0.6.0",
+    "onchange": "^6.1.0",
+    "postcss-cli": "^6.1.3",
+    "stylelint": "^12.0.0",
+    "stylelint-config-standard": "^19.0.0"
+  }
+}
