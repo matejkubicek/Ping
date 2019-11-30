@@ -1,34 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <title>Frontend Mentor | Ping coming soon page</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Fonts -->
+
+  <!-- jQuery -->
+
+  <!-- Stylesheet -->
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  We are launching soon!
+  <header class="site-header">
+    <img class="site-header__logo" src="./images/logo.svg" alt="Brand logo - PING">
+  </header>
 
-  Subscribe and get notified
+  <main class="main-info">
+    <h1 class="main-info__heading">We are launching <span>soon!</span></h1>
+    <p class="main-info__text">Subscribe and get notified</p>
+    <form method="post" id="subscribe-form" name="subscribe-form" class="subscribe-form">
+      <input type="email" value="" name="email" class="" id="subscribe-form__email" placeholder="Your email address..."
+        required>
+      <p class="subscribe-form__alert">Please provide a valid email address</p>
+      <button type="submit" name="submit" id="subscribe-form__submit" class="subscribe-form__submit">Notify Me</button>
+    </form>
+    <img class="main-info__img" src="./images/illustration-dashboard.png" alt="Dashboard illustration">
+  </main>
 
-  Notify Me
+  <div class="icon-bar">
+    <a class="icon-bar__link" href="https://www.facebook.com" target="_blank">
+      <svg class="icon-bar__icon" role="img">
+        <title>Facebook icon</title>
+        <use xlink:href="./images/sprite.svg#facebook" />
+      </svg>
+    </a>
+    <a class="icon-bar__link" href="https://www.twitter.com" target="_blank">
+      <svg class="icon-bar__icon" role="img">
+        <title>Twitter icon</title>
+        <use xlink:href="./images/sprite.svg#twitter" />
+      </svg>
+    </a>
+    <a class="icon-bar__link" href="https://www.instagram.com" target="_blank">
+      <svg class="icon-bar__icon" role="img">
+        <title>Instagram icon</title>
+        <use xlink:href="./images/sprite.svg#instagram" />
+      </svg>
+    </a>
+  </div>
 
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  <footer class="footer">
+    <p class="footer__text">&copy; Copyright Ping. All rights reserved.</p>
   </footer>
+
+  <div class="develop-footer">
+    <p class="develop-footer__text">
+      Challenge by <a class="develop-footer__link" href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a class="develop-footer__link" href="https://www.frontendmentor.io/profile/matejkubicek"
+        target="_blank">Matěj Kubíček</a>.
+    </p>
+  </div>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+
 </body>
+
 </html>
