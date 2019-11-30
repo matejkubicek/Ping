@@ -30,3 +30,47 @@
 .main-info__img {
   width: 100%;
 }
+
+@media only screen and (min-width: 500px) {
+  .main-info__heading,
+  .main-info__subheading {
+    font-size: 130%;
+  }
+
+  .main-info__text {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .main-info__heading,
+  .main-info__subheading {
+    font-size: 150%;
+  }
+
+  .main-info__text {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main-info__heading,
+  .main-info__subheading {
+    font-size: 170%;
+  }
+
+  .main-info__text {
+    font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-info__heading,
+  .main-info__subheading {
+    font-size: 200%;
+  }
+
+  .main-info__text {
+    font-size: 1em;
+  }
+}
