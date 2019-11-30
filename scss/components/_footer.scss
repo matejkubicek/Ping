@@ -1,0 +1,21 @@
+.footer {
+  font-size: 0.6em;
+  text-align: center;
+  color: $clr-gray;
+  padding: 0 2em 3em;
+}
+
+.develop-footer {
+  font-size: 0.5em;
+  text-align: center;
+  color: $clr-gray;
+  padding: 1em;
+}
+
+.develop-footer__link {
+  text-decoration: none;
+  color: $clr-blue;
+  &:hover {
+    text-decoration: underline;
+  }
+}

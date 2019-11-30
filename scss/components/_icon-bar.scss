@@ -1,0 +1,25 @@
+.icon-bar {
+  text-align: center;
+  padding: 1em 0;
+}
+
+.icon-bar__link {
+  text-decoration: none;
+  display: inline-block;
+  height: 42px;
+}
+
+.icon-bar__icon {
+  fill: $clr-blue;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  box-shadow: 0 0 2px $clr-blue;
+  padding: 3px;
+  margin: 0.3em;
+  &:hover {
+    box-shadow: none;
+    background-color: $clr-blue;
+    fill: #fff;
+  }
+}

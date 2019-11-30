@@ -1,0 +1,32 @@
+.main-info {
+  text-align: center;
+  padding: 4em 0;
+}
+
+.main-info__heading {
+  font-size: 1.1em;
+  font-weight: $fw-bold;
+  margin-bottom: 1.5em;
+  & span {
+    color: $clr-blue;
+  }
+}
+
+.main-info__subheading {
+  font-size: 1.2em;
+  font-weight: $fw-normal;
+  color: $clr-gray;
+  margin-bottom: 0.5em;
+  & span {
+    font-weight: $fw-bold;
+    color: $clr-dark-blue;
+  }
+}
+
+.main-info__text {
+  font-size: 0.65em;
+}
+
+.main-info__img {
+  width: 100%;
+}
